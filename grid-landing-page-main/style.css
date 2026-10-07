@@ -1,0 +1,136 @@
+ .attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color:hsl(228, 100%, 60%);
+    font-size: 17px;
+    
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.menu {
+   position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 300px;
+  height: 100vh;
+
+  background-color: hsl(228, 100%, 60%);
+
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 30px;
+}
+.menu.active {
+  display: flex;
+}
+/* Style du bouton hamburger */
+.menu-button {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.nav P{
+    color: hsl(0, 0%, 100%);
+}
+.hero {
+  border: 1px solid hsl(0, 0%, 100%);
+  padding:1rem;
+  width:40%;
+  color:hsl(0, 0%, 100%);
+  padding-top: 8rem;
+  padding-right: 13rem;
+ 
+ 
+}
+h1{
+    font-size: 2.5rem;
+}
+.p3{
+    font-size: 14px;
+
+}
+.content{
+    display: flex;
+     height: 80vh;
+}
+body.menu-open .content{
+    background-color:hsl(228, 65%, 42%);
+}
+body.menu-open .card{
+    background-color:hsl(228, 65%, 42%);
+}
+body.menu-open .foot{
+    background-color:hsl(228, 65%, 42%);
+}
+.foot{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color:hsl(0, 0%, 100%);
+}
+.grid{
+    width:60%;
+}
+.card{
+    background-color:hsl(228, 100%, 60%);
+    border: 1px solid hsl(0, 0%, 100%);
+    padding:1rem;
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.card img{
+    grid-column: 1;
+    grid-row: 1;
+    width: 30px;
+}
+.p1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:hsl(0, 0%, 100%);
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+.p2{
+    font-size: 14px;
+    color:hsl(0, 0%, 100%);
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+#logo{
+    width: 10px;
+    height: 10px;
+}
+.card:hover{
+    background-color:hsl(220, 100%, 64%);
+    cursor: pointer;
+}
+.close-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.menu a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+}
+.menu a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
